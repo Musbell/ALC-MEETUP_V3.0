@@ -53,3 +53,26 @@ function newElement() {
     }
   }
 }
+
+//Create a function called when you select a color
+function changeBgColor() {
+  var e = document.getElementById("drop");
+  val = e.options[e.selectedIndex].value;
+  if (val == "red") {
+    document.getElementById('myDIV').style.backgroundColor='red';
+  } else if (val == "green") {
+    document.getElementById('myDIV').style.backgroundColor='green';
+  } else if (val == "orange") {
+    document.getElementById('myDIV').style.backgroundColor='orange';
+  } else if (val == "yellow") {
+    document.getElementById('myDIV').style.backgroundColor='yellow';
+  }  else if (val == "blue") {
+    document.getElementById('myDIV').style.backgroundColor='blue';
+  }  else if (val == "indigo") {
+    document.getElementById('myDIV').style.backgroundColor='indigo';
+  }  else if (val == "violet") {
+    document.getElementById('myDIV').style.backgroundColor='violet';
+  }  else if (val == "black") {
+    document.getElementById('myDIV').style.backgroundColor='black';
+  }
+}
